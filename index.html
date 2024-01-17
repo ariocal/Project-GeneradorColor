@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Aleatorio</title>
+</head>
+<body >
+    <h1>Generador de Colores</h1>
+  <div class="principal">
+     <div class="container-color">
+      <h2>FORMATO HEX:</h2>
+       <div id="contenedor" class="centrar-flex">
+           <em><h3>Codigo:</h3></em>
+           <p id="color">#2B807B</p>
+       </div>
+       <h2>FORMATO RGB:</h2>
+       <div id="contenedor" class="centrar-flex">
+        <em><h3>Codigo:</h3></em>
+           <p id="color-rgb">RGB(43, 128, 123)</p>
+       </div>
+     </div>
+    
+    
+      <div class="contenedor-second">
+        <h2 class="titulo2">REGULAR RGB</h2>
+          <div class="contendor-interno">
+              <div class="colorr">
+                  <label for="rojo">
+                      Rojo (R)
+                  </label>
+                  <input id="rojo" type="range" min="0" max="255" value="43" step="1">
+                  <p id="texto-rojo" class="rgb"></p>
+              </div>
+    
+              <div class="colorr">
+                  <label for="verde">
+                      Verde (G)
+                  </label>
+                  <input id="verde" type="range" min="0" max="255" value="128" step="1">
+                  <p id="texto-verde" class="rgb"></p>
+              </div>
+    
+              <div class="colorr">
+                  <label for="azul">
+                      Azul (B)
+                  </label>
+                  <input id="azul" type="range" min="0" max="255" value="123" step="1">
+                  <p id="texto-azul" class="rgb"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <button id="boton-color">Generar Color</button>
+    <script src="app2.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos del cuerpo */
+body {
+    height: 100vh;
+    background-color: #2B807B;
+    padding-top: 40px;
+}
+
+/* Encabezado */
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+body{
+    text-align: center;
+}
+
+/* Contenedor principal */
+.principal {
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px;
+    gap: 20px
+;
+}
+
+/* Contenedor de colores */
+.container-color {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Contenedor de cada color */
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Texto del color */
+#color,
+#color-rgb {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de los sliders */
+.contendor-interno {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 240, 240, .8);
+    border-radius: 30px;
+    padding: 7px;
+    gap: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.titulo2{
+    margin-bottom: 15px;
+}
+
+/* Estilos para los sliders de colores */
+.colorr {
+    width: calc(50% - 20px);
+    max-width: 350px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.colorr  p, label{
+    text-align: center;
+}
+/* Botón */
+button {
+    font-size: 24px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 2px solid #FFF;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(10,10,10);
+    color: #fff; 
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+@media screen and (max-width: 600px) {
+    /* Ajustes para pantallas más pequeñas */
+    .principal {
+        gap: 5px;
+    }
+    h1{
+        
+        font-size: 2.4em;
+        
+    }
+    h2{
+        font-size: 1.1em;
+    }
+    .container-color {
+        width: 90%;
+    }
+
+    #contenedor,
+    .contendor-interno {
+        width: 90%;
+        max-width: none;
+    }
+
+    .colorr  p, label{
+        font-size: 1.1em;
+    }
+    p{
+        font-size: 1em;
+    }
+    #color,
+    #color-rgb {
+    font-size: 1em;
+}
+
+    .colorr {
+        width: 100%;
+    }
+}
